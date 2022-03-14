@@ -1,7 +1,12 @@
 
+const menu = document.querySelector('#mobile-menu')
+const menuLinks = document.querySelector('.navbar__ menu')
 
-let company = "Aisea";
-console.log(company);
-let name = 'Mosh'
+// display mobile menu
 
-console.log(name);
+const mobileMenu = () => {
+    menu.classList.toggle('is-active')
+    menuLinks.classList.toggle('active')
+}
+
+menu.addEventListener('click', mobileMenu);
